@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int start = 75;
+    int rows = 5;
+
+    for (int i = 0; i < rows; i++) {
+        for (int e = 0; e < rows - i; e++) {
+            printf("%d ", start + i + e);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
